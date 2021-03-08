@@ -1,3 +1,9 @@
-const h2 = document.createElement('h2');
-h2.textContent = "This content added by JavaScript";
-document.querySelector('body').appendChild(h2);
+function navButtons() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  

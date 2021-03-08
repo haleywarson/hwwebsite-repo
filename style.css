@@ -1,3 +1,225 @@
+ /* || General styles */
+
 body {
-    background: white;
-  }
+  margin: 0;
+}
+
+p {
+font-family: 'Lato', sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 25px;
+text-align: center;
+color: rgb(35,83,83);
+}
+
+a {
+  font-family: 'Molengo', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  text-align: center;
+  color: rgb(35,83,83);
+}
+
+h1 {
+  font-family: 'Molengo', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 125px;
+  text-align: center;
+  color: rgb(63,132,132);
+}
+
+.typewriter h1 {
+  overflow: hidden; /* content is not revealed until the animation */
+  white-space: nowrap; /* keeps the content on a single line */
+  margin: 20 auto; /* scrolling effect */
+  letter-spacing: .05em; 
+  animation: 
+    typing 2s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+/* typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+h2 {
+  font-family: 'Molengo', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  text-align: center;
+  color: rgb(63,132,132);
+}
+
+section {
+  height: 100vh; /*100% viewport height*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#home {
+  background-color: rgb(204,223,223);
+}
+
+#picture {
+  background-color: rgb(204,223,223);
+  background-image: url("./haleywarson.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* parallax scrolling effect */
+}
+
+#about {
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: scroll;
+}
+
+button {
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  background-color: rgb(204,223,223);
+}
+
+button a {
+  text-decoration: none;
+  color: rgb(35,83,83);
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+/* || Header and Main Navigation */
+
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  line-height: 50px;
+  background-color: white;
+  box-shadow: 0 0 25px 0 black;
+}
+
+header ul {
+  padding: 0;
+}
+
+header li {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(35,83,83);
+  margin-left: 20px;
+}
+
+header * {
+  display: inline;
+  text-decoration: none;
+  color: rgb(35,83,83);
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(63,132,132);
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  text-align: left;
+}
+
+.topnav a.icon {
+  background: rgb(63,132,132);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+    opacity: 0.7;
+}
+
+/* (home/logo) */
+.active {
+  background-color: rgb(35,83,83);
+  color: white;
+}
+
+/* || Footer */
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: rgb(35,83,83);
+}
+
+footer p {
+  color: white;
+  font-size: 25px;
+  display: inline-block;
+}
+
+ [class^="fab"] {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  background: rgb(35,83,83);
+  color: white;
+}
+
+[class^="far"] {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  background: rgb(35,83,83);
+  color: white;
+}
+
+[class^="fab"]:hover {
+  opacity: 0.7;
+}
+
+[class^="far"]:hover {
+  opacity: 0.7;
+}
+
+ /* NOTES:
+
+Colors...
+Medium  teal - rgb(63,132,132)
+Light blue - rgb(204,223,223) / HEX #CCDFDF 
+Dark teal - rgb(35,83,83) / HEX #235353
+Black - rgb(33,28,28)
+Brown - rgb(131,101,101)
+
+ */
