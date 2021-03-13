@@ -6,4 +6,3 @@ function navButtons() {
       x.style.display = "block";
     }
   }
-  

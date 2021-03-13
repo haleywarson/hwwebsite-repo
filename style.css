@@ -5,33 +5,47 @@ body {
 }
 
 p {
-font-family: 'Lato', sans-serif;
-font-style: normal;
-font-weight: 300;
-font-size: 25px;
-text-align: center;
-color: rgb(35,83,83);
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  text-align: center;
+  color: rgb(35,83,83);/*dark teal*/
 }
 
-a {
+#about a { /* flatironschoo.com link */
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  text-align: center;
+  color: rgb(35,83,83);/*dark teal*/
+  text-decoration: none;
+}
+
+#about a:hover { /* flatironschoo.com link */
+  opacity: 0.7;
+}
+
+a { /* hamburger menu links */
   font-family: 'Molengo', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 25px;
   text-align: center;
-  color: rgb(35,83,83);
+  color: rgb(35,83,83);/*dark teal*/
 }
 
-h1 {
+h1 { /* hi, i'm haley. */
   font-family: 'Molengo', sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 125px;
+  font-size: 14vh;
   text-align: center;
-  color: rgb(63,132,132);
+  color: rgb(63,132,132);/*medium teal*/
 }
 
-.typewriter h1 {
+.typewriter h1 { 
   overflow: hidden; /* content is not revealed until the animation */
   white-space: nowrap; /* keeps the content on a single line */
   margin: 20 auto; /* scrolling effect */
@@ -40,19 +54,19 @@ h1 {
     typing 2s steps(40, end),
     blink-caret .75s step-end infinite;
 }
-/* typing effect */
-@keyframes typing {
+
+@keyframes typing {/* typing effect */
   from { width: 0 }
   to { width: 100% }
 }
 
-h2 {
+h2 { /* about */
   font-family: 'Molengo', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 50px;
   text-align: center;
-  color: rgb(63,132,132);
+  color: rgb(63,132,132);/*medium teal*/
 }
 
 section {
@@ -64,11 +78,11 @@ section {
 }
 
 #home {
-  background-color: rgb(204,223,223);
+  background-color: rgb(204,223,223); /*light blue*/
 }
 
 #picture {
-  background-color: rgb(204,223,223);
+  background-color: rgb(204,223,223); /*light blue*/
   background-image: url("./haleywarson.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -88,12 +102,12 @@ button {
   text-align: center;
   display: inline-block;
   font-size: 20px;
-  background-color: rgb(204,223,223);
+  background-color: rgb(204,223,223); /*light blue*/
 }
 
 button a {
   text-decoration: none;
-  color: rgb(35,83,83);
+  color: rgb(35,83,83);/*dark teal*/
 }
 
 button:hover {
@@ -124,19 +138,19 @@ header li {
   font-weight: 300;
   font-size: 20px;
   text-align: center;
-  color: rgb(35,83,83);
+  color: rgb(35,83,83);/*dark teal*/
   margin-left: 20px;
 }
 
 header * {
   display: inline;
   text-decoration: none;
-  color: rgb(35,83,83);
+  color: rgb(35,83,83);/*dark teal*/
 }
 
 .topnav {
   overflow: hidden;
-  background-color: rgb(63,132,132);
+  background-color: rgb(63,132,132);/*medium teal*/
   position: relative;
 }
 
@@ -153,8 +167,8 @@ header * {
   text-align: left;
 }
 
-.topnav a.icon {
-  background: rgb(63,132,132);
+.topnav a.icon { /* (hamburger menu) */
+  background: rgb(63,132,132); /*medium teal*/
   display: block;
   position: absolute;
   right: 0;
@@ -167,8 +181,12 @@ header * {
 
 /* (home/logo) */
 .active {
-  background-color: rgb(35,83,83);
+  background-color: rgb(35,83,83);/*dark teal*/
   color: white;
+}
+
+html { /* smooth scroll to anchor links */
+  scroll-behavior: smooth;
 }
 
 /* || Footer */
@@ -176,7 +194,7 @@ header * {
 footer {
   text-align: center;
   padding: 25px;
-  background-color: rgb(35,83,83);
+  background-color: rgb(35,83,83);/*dark teal*/
 }
 
 footer p {
@@ -191,7 +209,7 @@ footer p {
   width: 30px;
   text-align: center;
   text-decoration: none;
-  background: rgb(35,83,83);
+  background: rgb(35,83,83);/*dark teal*/
   color: white;
 }
 
@@ -201,7 +219,7 @@ footer p {
   width: 30px;
   text-align: center;
   text-decoration: none;
-  background: rgb(35,83,83);
+  background: rgb(35,83,83); /*dark teal*/
   color: white;
 }
 
@@ -213,6 +231,27 @@ footer p {
   opacity: 0.7;
 }
 
+/* || Responsiveness */
+
+  /* Media Queries: Tablet Landscape */
+  @media screen and (max-width: 1060px) {
+    #primary { width:100%; }
+    #secondary { width:100%; }  
+  }
+  
+  /* Media Queries: Tablet Portrait */
+  @media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+  }
+
+  html { font-size:100%; }
+
+  @media (min-width: 640px) { body {font-size:1rem;} } 
+  @media (min-width:960px) { body {font-size:1.2rem;} } 
+  @media (min-width:1100px) { body {font-size:1.5rem;} }
+
+
  /* NOTES:
 
 Colors...
@@ -223,3 +262,5 @@ Black - rgb(33,28,28)
 Brown - rgb(131,101,101)
 
  */
+
+ 
